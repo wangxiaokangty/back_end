@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: tywxk123
+    url: jdbc:mysql://localhost:3306/mybatis?useSSL=false&characterEncoding=UTF-8
+    hikari:
+      charset: UTF-8
+
+pagehelper:
+  helper-dialect: mysql # 根据你的数据库类型设置
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
